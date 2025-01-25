@@ -8,12 +8,15 @@ from components.teams import render_teams
 st.set_page_config(page_title="Builder Hackathon", layout="wide")
 
 def load_css():
-    with open('styles/fonts.css') as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-    with open('styles.css') as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-    with open('styles/custom.css') as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    # Load all CSS files in the correct order
+    css_files = [
+        'styles/fonts.css',
+        'styles/styles.css',
+        'styles/custom.css'
+    ]
+    for css_file in css_files:
+        with open(css_file) as f:
+            st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 def main():
     load_css()
