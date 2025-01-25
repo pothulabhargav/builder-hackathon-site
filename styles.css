@@ -1,0 +1,56 @@
+/* Navigation Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 20px;
+    background-color: #262730;
+    padding: 10px 0px;
+    position: fixed;
+    top: 48px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: white;
+    border-radius: 4px;
+    padding: 5px 20px;
+    background-color: #404040;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    background-color: #505050;
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    background-color: #FF4B4B;
+}
+
+.main-content {
+    margin-top: 120px;
+}
+
+/* Team Card Styles */
+.team-card {
+    background-color: #404040;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-name {
+    color: #FF4B4B;
+    margin-bottom: 10px;
+}
+
+.team-problem {
+    color: #0096D7;
+    font-size: 18px;
+}
+
+.team-members {
+    color: white;
+    font-size: 16px;
+} 
