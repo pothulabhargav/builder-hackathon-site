@@ -11,7 +11,7 @@ def load_css():
     # Load all CSS files in the correct order
     css_files = [
         'styles/fonts.css',
-        'styles/styles.css',
+        'styles/main.css',
         'styles/custom.css'
     ]
     for css_file in css_files:
