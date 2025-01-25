@@ -1,0 +1,11 @@
+id: 1.5
+theme: Developer Efficiency
+problem: Automated Module Creation for Thomas
+description: >-
+  Create a system that enables Thomas (internal no-code rule engine), to automatically 
+  generate modules based on any vendor API documentation. The system should interpret 
+  the desired request and response structures outlined in the documentation to create 
+  functional modules within the no-code platform.
+objective: >-
+  Reduce the time and effort required to integrate vendor APIs into the platform.
+target_users: Software developers, low-code developers and product teams utilizing the no-code platform for Vendor API module integration

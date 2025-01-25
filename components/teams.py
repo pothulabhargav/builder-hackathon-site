@@ -2,27 +2,21 @@ import streamlit as st
 
 # Define teams data directly in the component for now
 # Later we can move this to a proper database or API
-teams = [
-    {
-        "name": "Team Alpha",
-        "members": ["John Doe", "Jane Smith", "Bob Wilson"],
-        "problem": "AI-Powered Document Analysis"
-    },
-    {
-        "name": "Team Beta", 
-        "members": ["Alice Johnson", "Mike Brown", "Sarah Davis"],
-        "problem": "Blockchain Supply Chain"
-    },
-    {
-        "name": "Team Gamma",
-        "members": ["Tom Clark", "Emma White", "James Lee"],
-        "problem": "Smart City Solutions"
-    }
-]
+import yaml
+
+with open('config/teams.yml', 'r') as f:
+    teams_data = yaml.safe_load(f)
+
+teams = []
+for team in teams_data['teams']:
+    teams.append({
+        "name": team['name'],
+        "members": team['members'],
+        "problem": "TBD"  # Since problems aren't in teams.yml, setting default
+    })
 
 def render_teams():
-    st.markdown("<div class='main-content'>", unsafe_allow_html=True)
-    st.markdown("<h1 style='text-align: center;'>Teams</h1>", unsafe_allow_html=True)
+    st.write("Here are the participating teams...")
     
     # Create rows with 2 teams per row
     for i in range(0, len(teams), 2):
@@ -51,5 +45,3 @@ def render_teams():
                             </ul>
                         </div>
                     """, unsafe_allow_html=True)
-    
-    st.markdown("</div>", unsafe_allow_html=True)

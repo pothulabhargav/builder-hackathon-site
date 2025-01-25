@@ -1,0 +1,14 @@
+id: 1.1
+theme: Developer Efficiency
+problem: DB Query Agent
+description: >-
+  Build a DB Query agent that can take text or voice inputs from users and generate
+  database queries across multiple databases. The agent should intelligently understand
+  which database the query pertains to and generate the appropriate query for that
+  database specifically. Additionally, the agent should be able to execute the query
+  and summarize the results.
+objective: >-
+  Enhance efficiency and accessibility by enabling users to obtain information without
+  requiring intricate knowledge of databases or how data is organized and managed
+  across various databases.
+target_users: Developers and any employees within the company who need to query databases

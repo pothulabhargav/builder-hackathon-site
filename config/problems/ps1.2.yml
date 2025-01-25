@@ -1,0 +1,12 @@
+id: 1.2
+theme: Developer Efficiency
+problem: Code Review Assistant
+description: >-
+  Build a Code Review Assistant that serves as a first layer of automated review for
+  merge requests. The assistant will analyze code for consistency, style, and potential
+  issues, providing feedback and suggestions as comments. This solution should empower
+  developers to adhere to best practices while streamlining the overall review workflow.
+objective: >-
+  Enable faster code reviews, improve code quality and reduce manual effort for code
+  reviews
+target_users: Developers and software engineers involved in code reviews

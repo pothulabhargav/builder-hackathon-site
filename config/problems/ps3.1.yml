@@ -1,0 +1,13 @@
+id: 3.1
+theme: Company Information Accessibility
+problem: Personalized News Feed for Internal Company Information
+description: >-
+  Develop a personalized news feed that curates relevant internal company information
+  and news tailored to each employee's role and interests. The system will aggregate
+  updates from various sources, including team changes, upcoming events, and noteworthy
+  customer success stories, etc, ensuring that employees stay informed about key
+  developments that matter to them.
+objective: >-
+  Improve accessibility of relevant company information and enhance employee engagement,
+  fostering a culture of transparency and collaboration with the organization.
+target_users: All employees

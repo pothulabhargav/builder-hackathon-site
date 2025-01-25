@@ -1,0 +1,12 @@
+id: 1.3
+theme: Developer Efficiency
+problem: InfoSec Agent
+description: >-
+  Build an agent that can automatically answer Information Security (Infosec) 
+  questionnaires based on internal policies, procedures, documentation, evidence etc. 
+  The agent should retrieve relevant information and provide accurate responses 
+  without user intervention.
+objective: >-
+  Reduce the time required to complete Infosec questionnaires without compromising 
+  on accuracy or quality in responses. Minimize manual effort needed by staff.
+target_users: InfoSec team or any employees responsible for responding to Infosec assessments

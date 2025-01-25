@@ -1,0 +1,15 @@
+id: 2.1
+theme: Customer Support and Sales Efficiency
+problem: Customer Support Agent
+description: >-
+  Create an AI-powered customer support agent that analyzes support tickets and
+  intelligently determines the best course of action based on the query. Depending
+  on the ticket content, the agent can either automatically provide answers to
+  queries or supply relevant information and sources to assist customer support
+  staff. The goal is to improve turn-around time, response accuracy and enhance
+  customer relationships and engagement.
+objective: >-
+  Provide timely and accurate answers to customer inquiries, thereby improving
+  customer satisfaction. Increase the efficiency of support staff and enable them
+  to focus on more complex issues.
+target_users: Customer support agents and teams responsible for handling customer inquiries and ticket management
