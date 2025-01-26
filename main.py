@@ -3,6 +3,8 @@ import streamlit as st
 from components.home import render_home
 from components.problems import render_problems
 from components.teams import render_teams
+from components.schedule import render_schedule
+from components.gallery import render_gallery
 
 # Configure page settings
 st.set_page_config(page_title="Builder Hackathon", layout="wide")
@@ -33,7 +35,7 @@ def main():
         """, unsafe_allow_html=True)
 
     # Create tabs
-    tab1, tab2, tab3 = st.tabs(["Home", "Problem Statements", "Teams"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["Home", "Problem Statements", "Teams", "Schedule", "Gallery"])
     
     with tab1:
         render_home()
@@ -43,6 +45,12 @@ def main():
         
     with tab3:
         render_teams()
+        
+    with tab4:
+        render_schedule()
+        
+    with tab5:
+        render_gallery()
 
 if __name__ == "__main__":
     main()

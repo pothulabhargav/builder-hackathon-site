@@ -16,7 +16,6 @@ for team in teams_data['teams']:
     })
 
 def render_teams():
-    st.write("Here are the participating teams...")
     
     # Create rows with 2 teams per row
     for i in range(0, len(teams), 2):

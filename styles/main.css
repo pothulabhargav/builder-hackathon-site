@@ -2,11 +2,13 @@
 :root {
     --ai-primary: #9d4edd;
     --ai-secondary: #7B61FF;
-    --ai-accent: #FF4B4B;
+    --ai-accent: #00b4d8;
+    --ai-tertiary: #00b4d8;
     --dark-bg: #1A1A1A;
     --darker-bg: #141414;
     --text-primary: #E0E0E0;
     --text-secondary: #B0B0B0;
+    --border-primary: #4d4d7d;
     --glow-effect: 0 0 10px rgba(157, 78, 221, 0.2);
     --main-font: 'IBM Plex Mono', monospace;
 }
@@ -15,6 +17,34 @@
 * {
     font-family: var(--main-font) !important;
 }
+
+/* body {
+    background-color: var(--dark-bg);
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+} */
+
+/* Force dark background on main Streamlit elements */
+.stApp {
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+}
+
+/* Fix gallery and schedule text */
+[data-testid="stImage"] + div p,
+
+/* # Ensure all text elements have good contrast
+span {
+    color: var(--text-primary) !important;
+    opacity: 1 !important;
+} */
+
+/* div {
+    color: var(--text-primary);
+    /* color: var(--ai-tertiary) !important; */
+    /* opacity: 1 !important; 
+} */
 
 /* Override Streamlit's default fonts */
 .stMarkdown, 
@@ -48,7 +78,7 @@ header[data-testid="stHeader"] {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid rgba(157, 78, 221, 0.2);
@@ -117,7 +147,9 @@ header[data-testid="stHeader"] {
 
 .main-content {
     margin-top: 72px;
-    background-color: var(--dark-bg);
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
 }
 
 /* Team Card Styles */
@@ -209,4 +241,21 @@ header[data-testid="stHeader"] {
 .home-link:hover {
     text-shadow: 0 0 12px rgba(157, 78, 221, 0.5);
     transform: scale(1.05);
-} 
+}
+
+/* Streamlit Expander Styling */
+.stExpander {
+    color: var(--text-primary) !important;
+    font-family: var(--main-font) !important;
+    /* padding: 1rem !important; */
+    transition: all 0.3s ease !important;
+}
+
+.stExpander > div {
+    background-color: var(--darker-bg) !important;
+    /* padding: 1rem !important; */
+}
+
+.stExpander > div[data-testid="stExpander"] {
+    color: var(--ai-tertiary) !important;
+}
