@@ -1,0 +1,13 @@
+id: 4.1
+theme: Accelerated Hiring Process
+problem: Resume Screening and Ranking Platform
+description: >-
+  Create a resume screening platform that can rank a collection of resumes based on user
+  input including job descriptions, scorecards, and custom evaluation criteria. The
+  platform should be generic and applicable across various roles and levels of
+  experience, automating the initial screening process to help recruiters efficiently
+  identify the most qualified candidate profiles.
+objective: >-
+  Reduce time spent on initial resume evaluations while maintaining the quality of
+  screening results.
+target_users: Recruiters, hiring managers, and HR teams involved in the recruitment process

@@ -1,0 +1,12 @@
+id: 3.2
+theme: Company Information Accessibility
+problem: AskCompany Bot for Internal Queries
+description: >-
+  Develop an "AskCompany" bot that can respond to employee queries related to company
+  information, including policies, rules, holidays, events, and other relevant resources.
+  The bot should provide accurate answers instantly to support employees in navigating
+  company information seamlessly.
+objective: >-
+  Provide instant and reliable access to company information that is up-to-date and
+  accurate.
+target_users: All employees, HR/PnC teams

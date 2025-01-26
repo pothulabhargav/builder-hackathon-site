@@ -1,0 +1,13 @@
+id: 5.2
+theme: Miscellaneous
+problem: AI-Powered Debt Collection Agent
+description: >-
+  Develop an AI-powered debt collection agent that automates communication with debtors
+  through various channels, including emails, SMS, and phone calls. The agent will
+  generate personalized messages, payment reminders and use effective recovery and
+  negotiation strategies based on debtor profiles, payment history, and engagement
+  behavior.
+objective: >-
+  Improve collection efficiency with reduced operational costs with automated and
+  personalized communication and recovery strategy.
+target_users: Debt collection agencies, financial institutions, and businesses with accounts receivable departments

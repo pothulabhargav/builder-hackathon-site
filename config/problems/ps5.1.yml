@@ -1,0 +1,14 @@
+id: 5.1
+theme: Miscellaneous
+problem: Intelligent Meeting Agent
+description: >-
+  Build an intelligent meeting agent that can listen to conversations during meetings
+  and respond to any queries directed at the agent in real-time. The agent will
+  leverage pre-fed information and data, as well as its customized character traits,
+  to provide accurate answers and insights. Additionally, the agent will assist with
+  meeting management tasks such as summarizing the meeting, sharing minutes of the
+  meeting (MoM) and conducting analysis on participant engagement.
+objective: >-
+  Provide real-time answers to questions during meetings, improving information
+  accessibility and facilitate efficient meeting management.
+target_users: Teams and organizations using Google Meet for virtual collaboration and communication

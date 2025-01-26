@@ -5,7 +5,7 @@ from components.problems import render_problems
 from components.teams import render_teams
 from components.schedule import render_schedule
 from components.gallery import render_gallery
-
+from components.resources import render_resources
 # Configure page settings
 st.set_page_config(page_title="Builder Hackathon", layout="wide")
 
@@ -35,7 +35,7 @@ def main():
         """, unsafe_allow_html=True)
 
     # Create tabs
-    tab1, tab2, tab3, tab4, tab5 = st.tabs(["Home", "Problem Statements", "Teams", "Schedule", "Gallery"])
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Home", "Problem Statements", "Teams", "Schedule", "Resources", "Gallery"])
     
     with tab1:
         render_home()
@@ -50,6 +50,9 @@ def main():
         render_schedule()
         
     with tab5:
+        render_resources()
+
+    with tab6:
         render_gallery()
 
 if __name__ == "__main__":
