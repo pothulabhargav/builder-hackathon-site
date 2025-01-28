@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 
 # Event details
 title = "Builder Hackathon"
@@ -47,6 +48,16 @@ button_styles = {
 }
 
 def render_home():
+    # Add auto-refresh using time and st.rerun()
+    if 'last_refresh' not in st.session_state:
+        st.session_state.last_refresh = time.time()
+    
+    current_time = time.time()
+    if current_time - st.session_state.last_refresh >= 5:
+        st.session_state.last_refresh = current_time
+        time.sleep(0.1)  # Small delay to prevent excessive CPU usage
+        st.rerun()
+
     col1, col2, col3 = st.columns([1,2,1])
     
     with col2:
@@ -109,3 +120,84 @@ def render_home():
                 </a>
             </div>
         """, unsafe_allow_html=True)
+
+        # Replace the async timer implementation with a simpler one
+        from datetime import datetime
+        import pytz
+
+        # Set event times (IST timezone)
+        ist = pytz.timezone('Asia/Kolkata')
+        start_time = ist.localize(datetime(2025, 1, 31, 10, 30))
+        end_time = ist.localize(datetime(2025, 2, 1, 15, 30))
+
+        def format_time(time_delta):
+            days = time_delta.days
+            hours = time_delta.seconds // 3600
+            minutes = (time_delta.seconds % 3600) // 60
+            return f"{days}d {hours}h {minutes}m"
+
+        now = datetime.now(ist)
+        
+        if now < start_time:
+            time_to_start = start_time - now
+            status = "Event Starts In"
+            time_text = format_time(time_to_start)
+        elif now > end_time:
+            status = "Event Status"
+            time_text = "Event Completed"
+        else:
+            time_to_end = end_time - now
+            status = "Event Ends In"
+            time_text = format_time(time_to_end)
+
+        # Display timer using st.markdown
+        st.markdown(f"""
+            <style>
+                .timer-container {{
+                    background: linear-gradient(145deg, #2d2d44 0%, #1a1a2e 100%);
+                    border: 1px solid #4d4d7d;
+                    border-radius: 10px;
+                    padding: 20px;
+                    margin: 30px auto;
+                    text-align: center;
+                    max-width: 600px;
+                    box-shadow: 0 4px 15px rgba(123, 44, 191, 0.15);
+                    z-index: 100;
+                    position: relative;
+                }}
+                .timer-heading {{
+                    color: #00b4d8;
+                    margin-bottom: 15px;
+                    font-size: 1.2em;
+                    font-weight: 500;
+                }}
+                .timer-value {{
+                    color: #e2e2e2;
+                    font-size: 2em;
+                    font-weight: bold;
+                    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+                }}
+            </style>
+            <div class="timer-container">
+                <div class="timer-heading">{status}</div>
+                <div class="timer-value">{time_text}</div>
+            </div>
+        """, unsafe_allow_html=True)
+
+        # Add refresh button next to timer with larger icon
+        st.markdown("""
+            <style>
+                .refresh-button {
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 24px;
+                }
+            </style>
+        """, unsafe_allow_html=True)
+        
+        # col1, col2 = st.columns([0.9, 0.1])
+        # with col2:
+        #     if st.button("↻", key="refresh_timer", help="Refresh timer"):
+        #         st.rerun()
