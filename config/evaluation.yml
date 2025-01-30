@@ -1,0 +1,29 @@
+criteria:
+  - name: "Solution Effectiveness"
+    description: "Measures how well the solution addresses the problem statement, meets user needs, and whether it functions as intended."
+    key_questions:
+      - Does the solution operate correctly without critical errors or failures?
+      - Does the solution tackle all key components of the problem statement?
+      - How closely does the solution align with the requirements and expectations of the target users?
+
+  - name: "Implementation Viability"
+    description : "Assesses the solution's feasibility for implementation and its readiness for real-world deployment."
+    key_questions:
+      - "Is the solution design feasible, considering potential challenges, costs, and resource availability?"
+      - "How close is the solution to actual implementation in a real-world scenario?"
+      - "Can the solution grow to handle higher scale or larger datasets?"
+
+  - name: "Accuracy and Performance"
+    description: "Evaluates the accuracy, speed and efficiency of the solution."
+    key_questions:
+      - "How accurate and reliable are the outputs produced by the solution?"
+      - "How fast and responsive is the solution?"
+      - "How easy is the solution to use, and how accessible is it for the target users?"
+
+
+  # - name: "Presentation & Documentation"
+  #   description: "This criterion assesses how well the team presents their solution, documents their work, and demonstrates the functionality and value of their implementation."
+  #   key_questions:
+  #     - "How clearly is the solution presented and demonstrated?"
+  #     - "How effectively does the presentation highlight key features and benefits?"
+  #     - "Are technical decisions and architecture well-explained?"
