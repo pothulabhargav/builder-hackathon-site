@@ -1,4 +1,21 @@
 teams:
+  - name: HyperBugged
+    members:
+      - Mohammed Asif
+      - Aryan Raj
+      - Mohammed Sami
+      - Yashvardhan Gera
+  - name: DBHolic
+    members:
+      - Aayush Aggarwal
+      - Ashish Aryan
+      - Prateek Kaistha
+      - Ritam Mukherjee
+  - name: TBD
+    members:
+      - TBD
+      - TBD
+      - TBD
   - name: TBD
     members:
       - TBD
