@@ -55,3 +55,24 @@ teams:
       - Murugappan
       - Ammenul Marsook
       - Harish Kumar
+  - name: localhost:8000
+    problem_statement: ps5.2
+    members:
+      - Gaurav Sharma
+      - Tanay 
+      - Sanskar
+      - Aryan Arora
+  - name: Irung BhAI
+    problem_statement: ps5.2
+    members:
+      - Harihara Roopan
+      - Akash Kumar
+      - Sanjith
+      - Tushar Rusia
+  - name: HyperScreen
+    problem_statement: ps4.1
+    members:
+      - Sai Shashank
+      - Priykrit Varma
+      - Akshay Modi
+      - Daksh Tiwari
