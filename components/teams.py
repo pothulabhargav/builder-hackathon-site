@@ -9,10 +9,15 @@ with open('config/teams.yml', 'r') as f:
 
 teams = []
 for team in teams_data['teams']:
+    # Load problem details from corresponding YAML file
+    problem_file = f"config/problems/{team['problem_statement']}.yml"
+    with open(problem_file, 'r') as f:
+        problem_data = yaml.safe_load(f)
+        
     teams.append({
         "name": team['name'],
         "members": team['members'],
-        "problem": "TBD"  # Since problems aren't in teams.yml, setting default
+        "problem": f'{problem_data["id"]} -  {problem_data["problem"]}'  # Get problem title from problem YAML file
     })
 
 def render_teams():

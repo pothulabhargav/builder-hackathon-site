@@ -76,3 +76,37 @@ teams:
       - Priykrit Varma
       - Akshay Modi
       - Daksh Tiwari
+  - name: CodeCrafters
+    problem_statement: ps5.2
+    members:
+      - Gaurav Sharma
+      - Tanay 
+      - Sanskar
+      - Aryan Arora
+  - name: Pathukalam.ai
+    problem_statement: ps5.1
+    members:
+      - Pranav Balaji
+      - Shivank Mittal
+      - Shreya Sajal
+  - name: Pied Pipers
+    problem_statement: ps5.1
+    members:
+      - NaraSimha
+      - Shaurya Gupta
+      - Shreyansh Das
+      - Kartik Savant
+  # - name: The Watchmen
+  #   problem_statement: ps
+  #   members:
+  #     - Saifullah N
+  #     - Prakasam
+  #     - Surya Prakash
+  #     - Vasanth
+  # - name: 
+  #   problem_statement: ps
+  #   members:
+  #     - Srilaya
+  #     - Elanngo
+  #     - Mani
+  #     -
