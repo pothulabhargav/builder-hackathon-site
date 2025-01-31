@@ -89,6 +89,7 @@ teams:
       - Pranav Balaji
       - Shivank Mittal
       - Shreya Sajal
+      - -
   - name: Pied Pipers
     problem_statement: ps5.1
     members:
@@ -96,17 +97,21 @@ teams:
       - Shaurya Gupta
       - Shreyansh Das
       - Kartik Savant
-  # - name: The Watchmen
-  #   problem_statement: ps
-  #   members:
-  #     - Saifullah N
-  #     - Prakasam
-  #     - Surya Prakash
-  #     - Vasanth
-  # - name: 
-  #   problem_statement: ps
-  #   members:
-  #     - Srilaya
-  #     - Elanngo
-  #     - Mani
-  #     -
+  - name: FunctionOverFluff
+    problem_statement: ps3.2
+    members:
+      - Joshvir Narula
+  - name: The Watchmen
+    problem_statement: ps1.4
+    members:
+      - Saifullah N
+      - Prakasam
+      - Surya Prakash
+      - Vasanth
+  - name: The Witchers 
+    problem_statement: ps2.2
+    members:
+      - Srilaya S P
+      - Elanngo C
+      - Mani Prakash
+      - -
