@@ -1,37 +1,57 @@
 teams:
   - name: HyperBugged
+    problem_statement: ps1.2
     members:
       - Mohammed Asif
       - Aryan Raj
       - Mohammed Sami
       - Yashvardhan Gera
   - name: DBHolic
+    problem_statement: ps1.1
     members:
       - Aayush Aggarwal
       - Ashish Aryan
       - Prateek Kaistha
       - Ritam Mukherjee
   - name: Etienne
+    problem_statement: ps1.5
     members:
       - Saurav Shekhar Singh
       - Abhinav Kumar
       - Manu Sehgal
       - Divyam Chandalia
   - name: codeCops
+    problem_statement: ps1.2
     members:
       - Vivek Nichani
       - Suchismita Sur
       - Ankan Poddar
       - Anwesha Das
   - name: Screeners
+    problem_statement: ps4.1
     members:
       - Dhruv Rajpoot
       - Tushar sharma
       - Dharini Karthikeyan
       - Pranay Reddy K
   - name: AutoAssist
+    problem_statement: ps2.1
     members:
       - Sanchit Mehta
       - Sourav Karjee
       - Chitransh Jain
       - Shivam Barsaley
+  - name: CodeGeass
+    problem_statement: ps1.4
+    members:
+      - Deepak Prasad
+      - Dhruvil Patel
+      - Sanskar Chandra
+      - Akshat Tripathi
+  - name: NullPointers
+    problem_statement: ps1.3
+    members:
+      - Kishore S
+      - Murugappan
+      - Ammenul Marsook
+      - Harish Kumar
