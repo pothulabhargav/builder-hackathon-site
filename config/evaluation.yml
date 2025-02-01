@@ -1,10 +1,10 @@
 criteria:
-  - name: "Solution Effectiveness"
+  - name: "Problem-Solution fit"
     description: "Measures how well the solution addresses the problem statement, meets user needs, and whether it functions as intended."
     key_questions:
-      - Does the solution operate correctly without critical errors or failures?
-      - Does the solution tackle all key components of the problem statement?
-      - How closely does the solution align with the requirements and expectations of the target users?
+      - "How closely does the solution align with the pain points and expectations of the target users?"
+      - "Does the solution tackle all key components of the problem statement?"
+      - "Does the solution operate correctly without critical errors or failures?"
 
   - name: "Implementation Viability"
     description : "Assesses the solution's feasibility for implementation and its readiness for real-world deployment."
@@ -17,7 +17,7 @@ criteria:
     description: "Evaluates the accuracy, speed and efficiency of the solution."
     key_questions:
       - "How accurate and reliable are the outputs produced by the solution?"
-      - "How fast and responsive is the solution?"
+      - "How fast and responsive is the solution as required?"
       - "How easy is the solution to use, and how accessible is it for the target users?"
 
 

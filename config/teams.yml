@@ -76,13 +76,6 @@ teams:
       - Priykrit Varma
       - Akshay Modi
       - Daksh Tiwari
-  - name: CodeCrafters
-    problem_statement: ps5.2
-    members:
-      - Gaurav Sharma
-      - Tanay 
-      - Sanskar
-      - Aryan Arora
   - name: Pathukalam.ai
     problem_statement: ps5.1
     members:
